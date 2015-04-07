@@ -5,17 +5,17 @@
 > _[AngularJS - angularjs.org](http://angularjs.org)_
 
 # Build and Run - cm325 fork
-1.There a few additional dependencies installed with this version, so before running do
+1. There a few additional dependencies installed with this version, so before serving, run (from the root folder):
 
    ```
      npm install
    ```
-2.I added a gulp file, so now there's an easy way to setup a server (with live reload!). Just run
+2. I added a gulp file, so now there's an easy way to setup a server (with live reload!). Just run:
 
 ```
      gulp
 ```
-3.To setup and run the tests, see the README in the test folder
+3. To setup and run the tests, see the README in the test folder
 
 
 
