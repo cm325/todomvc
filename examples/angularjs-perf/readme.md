@@ -15,13 +15,14 @@
      echo examples/angularjs-perf/ >> .git/info/sparse-checkout
      git remote add -f origin https://github.com/cm325/todomvc.git
      git pull origin master
+     cd examples/angularjs-perf
    ```
-2. There a few additional dependencies installed with this version, so before serving, run (from the root folder):
+2. There a few additional dependencies installed with this version, so before serving, (may need root/sudo):
 
    ```
      npm install
    ```
-3. I added a gulp file, so now there's an easy way to setup a server (with live reload!). Just run:
+3. I added a gulp file, so now there's an easy way to setup a server (with live reload!). If you don't have gulp installed globally, do so first (sudo npm install -g gulp)then run:
 
    ```
      gulp
