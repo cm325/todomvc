@@ -46,15 +46,15 @@ describe('todomvc', function() {
 	  	expect(todoPage.todoList.count()).toEqual(1);
 	  });
 
-    browser.pause();
-    browser.debugger();
+    //browser.pause();
+    //browser.debugger();
 
   	
   	it('should display the footer', function() {
   		expect(todoPage.footer.isDisplayed()).toBeTruthy();
   	});
 
-  	xit('should show correct remaining count', function() {
+  	it('should show correct remaining count', function() {
   		expect(todoPage.remainingCount).toEqual(1);
   	});
 
@@ -64,21 +64,23 @@ describe('todomvc', function() {
   });
 
 
-  describe('completing a todo', function() {
+  xdescribe('completing a todo', function() {
 
-  	it('should...', function() {
+  	it('should mark a todo as completed', function() {
 	  	var todo = element.all(by.repeater('todo in todos')).get(0);
-	  	expect(todo.getText()).toEqual('test');
+      todo.element(by.binding('remainingCount')).click();
+
+      browser.executeScript('return window;').then(function(window){
+        expect(window.getComputedStyle(angular.element($0)[0], null)["text-decoration"]).toEqual('1.3.0-rc.3');  
+      });
+     
   	});
-
-    browser.pause();
-    browser.debugger();
-
 
   	it('should...', function() {
 			element.all(by.repeater('todo in todos')).get(0).click();
 
   	});
+
   });
 
   
