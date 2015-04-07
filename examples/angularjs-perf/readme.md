@@ -5,8 +5,17 @@
 > _[AngularJS - angularjs.org](http://angularjs.org)_
 
 # Build and Run - cm325 fork
-1. I added a gulp file, so now there's an easy way to setup a server (with live reload!). Just run
-2. 
+1.There a few additional dependencies installed with this version, so before running do
+   ```
+     npm install
+   ```
+1.I added a gulp file, so now there's an easy way to setup a server (with live reload!). Just run
+    ```
+      \$ gulp
+    ```
+1.To setup and run the tests, see the README in the test folder
+
+
 
 ## Learning AngularJS
 The [AngularJS website](http://angularjs.org) is a great resource for getting started.
