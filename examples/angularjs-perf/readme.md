@@ -13,7 +13,7 @@
 2.I added a gulp file, so now there's an easy way to setup a server (with live reload!). Just run
 
 ```
-   \$ gulp
+     gulp
 ```
 3.To setup and run the tests, see the README in the test folder
 
