@@ -15,7 +15,7 @@
 ```
      gulp
 ```
-4. To setup and run the tests, see the README in the test folder
+"3". To setup and run the tests, see the README in the test folder
 
 
 
