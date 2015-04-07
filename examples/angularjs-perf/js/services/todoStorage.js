@@ -14,6 +14,9 @@ todomvc.factory('todoStorage', function () {
 
 		put: function (todos) {
 			localStorage.setItem(STORAGE_ID, JSON.stringify(todos));
+		},
+		clear: function(){
+			localStorage.setItem(STORAGE_ID, []);
 		}
 	};
 });
