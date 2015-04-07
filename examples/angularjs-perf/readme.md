@@ -4,6 +4,9 @@
 
 > _[AngularJS - angularjs.org](http://angularjs.org)_
 
+# Build and Run - cm325 fork
+1. I added a gulp file, so now there's an easy way to setup a server (with live reload!). Just run
+2. 
 
 ## Learning AngularJS
 The [AngularJS website](http://angularjs.org) is a great resource for getting started.
@@ -41,4 +44,3 @@ The normal AngularJS TodoMVC implementation performs deep watching of the todos 
 
 In larger more complex applications however, where one might be working with 100s or 1000s of large objects one definitely should avoid using this approach. This implementation of the AngularJS app demonstrates the correct way to approach this problem when working in larger apps.
 
-Run this example: http://cm325.github.io/todomvc/examples/angularjs-perf/#/
