@@ -5,17 +5,29 @@
 > _[AngularJS - angularjs.org](http://angularjs.org)_
 
 # Build and Run - cm325 fork
-1. There a few additional dependencies installed with this version, so before serving, run (from the root folder):
+1. Since we're really only interested in the angularjs-perf example, we do a sparse git checkout:
+   
+   ```
+     mkdir todomvc-angularjs-perf
+     cd todomvc-angularjs-perf/
+     git init
+     git config core.sparsecheckout true 
+     echo examples/angularjs-perf/ >> .git/info/sparse-checkout
+     git remote add -f origin https://github.com/cm325/todomvc.git
+     git pull origin master
+   ```
+2. There a few additional dependencies installed with this version, so before serving, run (from the root folder):
 
    ```
      npm install
    ```
-2. I added a gulp file, so now there's an easy way to setup a server (with live reload!). Just run:
+3. I added a gulp file, so now there's an easy way to setup a server (with live reload!). Just run:
 
 ```
      gulp
 ```
-"3". To setup and run the tests, see the README in the test folder
+4. To setup and run the tests, see the README in the test folder
+5. 
 
 
 
