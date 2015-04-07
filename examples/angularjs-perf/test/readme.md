@@ -1,7 +1,7 @@
 Angular Unit Tests
 ==================
 
-To run the karma test suite, run these commands:
+To run the karma test suite, run these commands from the test directory:
 
     npm install
     npm test
@@ -16,7 +16,7 @@ npm install protractor -g
 webdriver-manager update
 ```
 
-To run protractor, for now we do it manually (this could be bundled in npm or gulp). Run each of these commands in a separate terminal window:
+To run protractor, for now we do it manually (this could be bundled in npm or gulp). Run each of these commands in a separate terminal window (and again, from this test directory):
     
 ```
 gulp
