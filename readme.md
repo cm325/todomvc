@@ -1,6 +1,6 @@
 # ![TodoMVC](media/logo.png)
 
-> Helping you select an MV\* framework
+> Helping you ~~select~~ **choose Angular** as your  MV\* framework -- see /examples/angularjs-perf
 
 ### [Website](http://todomvc.com)&nbsp;&nbsp;&nbsp;&nbsp;[Blog](http://blog.tastejs.com)&nbsp;&nbsp;&nbsp;&nbsp;[TasteJS](http://tastejs.com)
 

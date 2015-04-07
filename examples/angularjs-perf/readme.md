@@ -4,6 +4,33 @@
 
 > _[AngularJS - angularjs.org](http://angularjs.org)_
 
+# Build and Run - cm325 fork
+1. Since we're really only interested in the angularjs-perf example, we do a sparse git checkout:
+   
+   ```
+     mkdir todomvc-angularjs-perf
+     cd todomvc-angularjs-perf/
+     git init
+     git config core.sparsecheckout true 
+     echo examples/angularjs-perf/ >> .git/info/sparse-checkout
+     git remote add -f origin https://github.com/cm325/todomvc.git
+     git pull origin master
+     cd examples/angularjs-perf
+   ```
+2. There a few additional dependencies installed with this version, so before serving, (may need root/sudo):
+
+   ```
+     npm install
+   ```
+3. I added a gulp file, so now there's an easy way to setup a server (with live reload!). If you don't have gulp installed globally, do so first (sudo npm install -g gulp)then run:
+
+   ```
+     gulp
+   ```
+4. To setup and run the tests, see the README in the test folder
+5. 
+
+
 
 ## Learning AngularJS
 The [AngularJS website](http://angularjs.org) is a great resource for getting started.
@@ -41,4 +68,3 @@ The normal AngularJS TodoMVC implementation performs deep watching of the todos 
 
 In larger more complex applications however, where one might be working with 100s or 1000s of large objects one definitely should avoid using this approach. This implementation of the AngularJS app demonstrates the correct way to approach this problem when working in larger apps.
 
-Run this example: http://cm325.github.io/todomvc/examples/angularjs-perf/#/
