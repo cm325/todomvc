@@ -8,5 +8,3 @@
  * @type {angular.Module}
  */
 var todomvc = angular.module('todomvc', []);
-
-//wesssyy

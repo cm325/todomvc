@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" ng-app="todomvc" data-framework="angularjs">
+	<head>
+		<meta charset="utf-8">
+		<title>AngularJS • TodoMVC</title>
+		<link rel="stylesheet" href="../../node_modules/todomvc-common/base.css">
+		<link rel="stylesheet" href="../../node_modules/todomvc-app-css/index.css">
+		<style>[ng-cloak] { display: none; }</style>
+	</head>
+	<body>
+		<section id="todoapp">
+			<header id="header">
+				<h1>todos</h1>
+				<form id="todo-form">
+					<input id="new-todo" placeholder="What needs to be done?" autofocus>
+				</form>
+			</header>
+			<section id="main">
+				<input id="toggle-all" type="checkbox" >
+				<label for="toggle-all">Mark all as complete</label>
+				<ul id="todo-list">
+					<li>
+						<div class="view">
+							<input class="toggle" type="checkbox">
+							<label></label>
+							<button class="destroy"></button>
+						</div>
+						<form>
+							<input class="edit">
+						</form>
+					</li>
+				</ul>
+			</section>
+			<footer id="footer">
+				<span id="todo-count"><strong></strong>
+				</span>
+				<ul id="filters">
+					<li>
+						<a href="#/">All</a>
+					</li>
+					<li>
+						<a  href="#/active">Active</a>
+					</li>
+					<li>
+						<a href="#/completed">Completed</a>
+					</li>
+				</ul>
+				<button id="clear-completed">Clear completed ()</button>
+			</footer>
+		</section>
+</body>
+</html>
